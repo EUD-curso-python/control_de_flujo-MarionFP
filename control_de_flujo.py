@@ -59,7 +59,6 @@ separados por coma, así:
 
 n = 1
 multiplo = 134
-cadena = ''
 tabla100 = ''
 while n < 11:
   valor = 134 * n
