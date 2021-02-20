@@ -69,7 +69,7 @@ while n < 11:
   tabla100 = tabla100 + str(valor)
   n += 1
 print(tabla100)
-
+print(' ')
 
 
 """Guardar en `multiplos3` la cantidad de números que son múltiplos de 3 y 
@@ -77,9 +77,13 @@ menores o iguales a 300 en la lista `lista1` que se define a continuación (la l
 está ordenada).
 """
 lista1 = [12, 15, 20, 27, 32, 39, 42, 48, 55, 66, 75, 82, 89, 91, 93, 105, 123, 132, 150, 180, 201, 203, 231, 250, 260, 267, 300, 304, 310, 312, 321, 326]
-
-
-
+cantidad = 0
+multiplos3 = 0
+for elemento in lista1:
+  mod = elemento%3
+  if mod == 0 and elemento < 300:
+    multiplos3 += 1
+print(multiplos3)
 
 
 """Guardar en `regresivo50` una lista con la cuenta regresiva desde el número 
