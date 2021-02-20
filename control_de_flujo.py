@@ -48,6 +48,7 @@ while n < 100:
   n += 1
   suma100 += n
 print(suma100)
+print(' ')
 
 """Guarde en `tabla100` un string con los primeros 10 múltiplos del número 134, 
 separados por coma, así:
@@ -56,14 +57,19 @@ separados por coma, así:
 
 """
 
-n = 0
+n = 1
 multiplo = 134
-lista = []
-while n < 10:
-  n += 1
+cadena = ''
+tabla100 = ''
+while n < 11:
   valor = 134 * n
-  lista.append(valor)
-  print(lista)
+  if n != 10:
+    valor = str(valor) + ','
+  else:
+    valor = str(valor)
+  tabla100 = tabla100 + str(valor)
+  n += 1
+print(tabla100)
 
 
 
