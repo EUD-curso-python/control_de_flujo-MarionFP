@@ -16,26 +16,16 @@ print(' ')
 
 Hasta el número 50.
 """
-
-#n = 0
-#lista = []
-#acumulado = []
-#while n < 5:
-#  n = n+1
-#  lista.append(n)
-#  acumulado.append(lista)
-#print(acumulado)
-
-
-n = 0
+valor = ''
 acumulado = []
-while n < 5:
-  n += 1
-  k = 0
-  while k < n:
-    k += 1
-    lista =str(k)
-    acumulado.append(lista)
+for i in range(1,51):
+  for j in range(1,(i+1)):
+    if j == 1:
+      valor += str(j) 
+    else:
+      valor +=  ' ' + str(j)
+  acumulado.append(valor)
+  valor = ''
 print(acumulado)
 
 
@@ -84,7 +74,7 @@ for elemento in lista1:
   if mod == 0 and elemento < 300:
     multiplos3 += 1
 print(multiplos3)
-
+print(' ')
 
 """Guardar en `regresivo50` una lista con la cuenta regresiva desde el número 
 50 hasta el 1, así:
@@ -100,25 +90,52 @@ print(multiplos3)
   '1'
 ]
 """
-
-
-
-
+n = 1
+valor = ''
+regresivo50 = []
+for i in range(50,0,-1):
+  for j in range(i,0,-1):
+    if j == 1:
+      valor += str(j) 
+    else:
+      valor +=  str(j) + ' '
+  regresivo50.append(valor)
+  valor = ''
+print(regresivo50)
 
 
 """Invierta la siguiente lista usando el bucle for y guarde el resultado en 
 `invertido` (sin hacer uso de la función `reversed` ni del método `reverse`)
 """
+print('')
 lista2 = list(range(1, 70, 5))
-
-
-
-
+tamano = len(lista2) -1
+invertido = []
+for i in lista2:
+  invertido.append(lista2[tamano])
+  tamano -= 1
+print(invertido)
 
 """Guardar en `primos` una lista con todos los números primos desde el 37 al 300
 Nota: Un número primo es un número entero que no se puede calcular multiplicando 
 otros números enteros.
 """
+print('')
+print('Primos')
+primos = []
+for i in range(1, 4, 1):
+  for j in (2, i, 1):
+    mod = i%j
+    print('i:', i, 'j:', j, 'mod:',mod)
+    bandera = 1
+    if mod == 0:
+      bandera = 0
+      break
+    else:
+      bandera = 1 
+  if bandera == 1:
+    primos.append(i)
+print(primos)
 
 
 
