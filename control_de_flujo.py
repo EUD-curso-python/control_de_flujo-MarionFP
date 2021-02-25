@@ -242,6 +242,9 @@ for i in range(1,n,1):
   if i <= (n/2):
     cadena = cadena + '*' 
   else:
-    cadena = cadena[:-1]    
-  patron = patron +"\n"+ cadena
+    cadena = cadena[:-1]
+  if i == 1:  
+    patron = patron + cadena
+  else:
+    patron = patron +"\n"+ cadena
 print(patron)
