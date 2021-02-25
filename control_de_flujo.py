@@ -187,14 +187,17 @@ for i in range(0,81,2):
   pares.append(lista3[i])
 print(pares)
 
-
-
-
-
 """Guarde en lista `cubos` el cubo (potencia elevada a la 3) de los números del 
 1 al 100. 
 """
+print('')
+print('Cubos')
+cubos = []
+for i in range(1,100,1):
+  valor = i**3
+  cubos.append(valor)
 
+print(cubos)
 
 
 
