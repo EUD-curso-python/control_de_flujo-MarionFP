@@ -144,6 +144,19 @@ del segundo cada uno se calcula sumando los dos anteriores términos de la serie
 
 """
 
+print('')
+print('Fibonacci')
+fibonacci = [0,1]
+for i in range(1,59,1):
+  a = len(fibonacci) - 1
+  b = a - 1
+  valor1=fibonacci[a]
+  valor2=fibonacci[b]
+  valor = valor1 + valor2
+  fibonacci.append(valor)
+print(fibonacci)
+  
+
 
 
 
