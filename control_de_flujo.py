@@ -123,22 +123,16 @@ otros números enteros.
 print('')
 print('Primos')
 primos = []
-for i in range(1, 4, 1):
-  for j in (2, i, 1):
+for i in range(37, 300, 1):
+  contador = 0
+  for j in range(1, i+1, 1):
     mod = i%j
-    print('i:', i, 'j:', j, 'mod:',mod)
-    bandera = 1
+    #print('i:', i, 'j:', j, 'mod:',mod)
     if mod == 0:
-      bandera = 0
-      break
-    else:
-      bandera = 1 
-  if bandera == 1:
+      contador += 1   
+  if contador == 2:
     primos.append(i)
 print(primos)
-
-
-
 
 
 """Guardar en `fibonacci` una lista con los primeros 60 términos de la serie de 
