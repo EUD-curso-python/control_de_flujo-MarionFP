@@ -193,22 +193,24 @@ print(pares)
 print('')
 print('Cubos')
 cubos = []
-for i in range(1,100,1):
+for i in range(1,101,1):
   valor = i**3
   cubos.append(valor)
-
 print(cubos)
-
-
-
 
 """Encuentre la suma de la serie 2 +22 + 222 + 2222 + .. hasta sumar 10 términos 
 y guardar resultado en variable `suma_2s` 
 """
 
+print('')
+print('suma_2s')
 
-
-
+suma_2s = 0
+valor = ''
+for i in range(1,11,1):
+  valor = str(valor)+str(2)
+  suma_2s += int(valor)
+print(suma_2s)
 
 """Guardar en un string llamado `patron` el siguiente patrón llegando a una 
 cantidad máxima de asteriscos de 30. 
