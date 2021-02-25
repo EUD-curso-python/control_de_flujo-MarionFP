@@ -233,6 +233,14 @@ cantidad máxima de asteriscos de 30.
 *
 """
 
-
-
-
+print('')
+print('asteriscos')
+patron = ''
+cadena = ''
+for i in range(1,60,1):
+  if i <= 30:
+    cadena = cadena + '*'
+  else:
+    cadena = cadena[:-1]    
+  patron = patron +"\n"+ cadena
+print(patron)
