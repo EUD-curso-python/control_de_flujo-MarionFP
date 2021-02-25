@@ -237,8 +237,9 @@ print('')
 print('asteriscos')
 patron = ''
 cadena = ''
-for i in range(1,60,1):
-  if i <= 30:
+n = 60
+for i in range(1,n,1):
+  if i <= (n/2):
     cadena = cadena + '*' 
   else:
     cadena = cadena[:-1]    
