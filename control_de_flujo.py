@@ -156,11 +156,6 @@ for i in range(1,59,1):
   fibonacci.append(valor)
 print(fibonacci)
   
-
-
-
-
-
 """Guardar en `factorial` el factorial de 30
 El factorial (símbolo:!) Significa multiplicar todos los números enteros desde
 el 1 hasta el número elegido.
@@ -170,8 +165,12 @@ Por ejemplo, el factorial de 5 se calcula así:
 5! = 5 × 4 × 3 × 2 × 1 = 120
 """
 
-
-
+print('')
+print('Factorial')
+factorial = 30
+for i in range(29,0,-1):
+  factorial *= i
+print(factorial)
 
 
 """Guarde en lista `pares` los elementos de la siguiente lista que esten 
